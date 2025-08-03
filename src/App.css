@@ -1,0 +1,31 @@
+/* Define theme variables */
+:root {
+  /* Light theme */
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #5FB0A5;
+  --card-bg: #f8f9fa;
+  
+  /* Add all other variables you need */
+}
+
+.dark-theme {
+  /* Dark theme */
+  --bg-color: #121212;
+  --text-color: #f8f9fa;
+  --primary-color: #4a9c8e;
+  --card-bg: #1e1e1e;
+}
+
+/* Apply variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Example component using variables */
+.card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
