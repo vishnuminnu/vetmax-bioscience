@@ -85,14 +85,19 @@ const ContactUS = () => {
               transition: 'background-color 0.3s ease'
             }}>
               <h3 className="h4 mb-4" style={{ color: '#5FB0A5' }}>Send Us a Message</h3>
-              <form 
-  name="contact" 
-  method="POST" 
+     <form
+  name="contact"
+  method="POST"
   data-netlify="true"
+  data-netlify-honeypot="bot-field"
   className="needs-validation"
+  action="/thank-you"  // optional redirect page after submit
 >
-  {/* Hidden input so Netlify detects the form */}
+  {/* Hidden input for Netlify mapping */}
   <input type="hidden" name="form-name" value="contact" />
+
+  {/* Honeypot anti-spam field (hidden) */}
+  <input type="text" name="bot-field" style={{ display: "none" }} />
 
   <div className="row g-3">
     <div className="col-md-6">
