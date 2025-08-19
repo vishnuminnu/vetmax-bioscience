@@ -30,7 +30,7 @@ const Footer = () => {
               </div>
               <div className="d-flex align-items-start">
                 <FaMapMarkerAlt className="me-3 mt-1" style={{ color: '#5FB0A5' }} />
-                <span style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>123 Bioscience Park, Research Triangle, NC 27709</span>
+                <span style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>191 Fox Valley Dr, Aurora, IL 60504</span>
               </div>
             </div>
           </div>

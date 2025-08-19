@@ -85,103 +85,117 @@ const ContactUS = () => {
               transition: 'background-color 0.3s ease'
             }}>
               <h3 className="h4 mb-4" style={{ color: '#5FB0A5' }}>Send Us a Message</h3>
-              <form>
-                <div className="row g-3">
-                  <div className="col-md-6">
-                    <label htmlFor="name" className="form-label" style={{ color: darkMode ? 'white' : 'inherit' }}>Full Name</label>
-                    <input 
-                      type="text" 
-                      className="form-control" 
-                      id="name" 
-                      required 
-                      style={{ 
-                        backgroundColor: darkMode ? '#2a2a2a' : 'white',
-                        color: darkMode ? 'white' : 'inherit',
-                        borderColor: darkMode ? '#444' : '#ced4da'
-                      }}
-                    />
-                  </div>
-                  <div className="col-md-6">
-                    <label htmlFor="email" className="form-label" style={{ color: darkMode ? 'white' : 'inherit' }}>Email</label>
-                    <input 
-                      type="email" 
-                      className="form-control" 
-                      id="email" 
-                      required 
-                      style={{ 
-                        backgroundColor: darkMode ? '#2a2a2a' : 'white',
-                        color: darkMode ? 'white' : 'inherit',
-                        borderColor: darkMode ? '#444' : '#ced4da'
-                      }}
-                    />
-                  </div>
-                  <div className="col-md-6">
-                    <label htmlFor="phone" className="form-label" style={{ color: darkMode ? 'white' : 'inherit' }}>Phone Number</label>
-                    <input 
-                      type="tel" 
-                      className="form-control" 
-                      id="phone" 
-                      placeholder="+1 (123) 456-7890" 
-                      required 
-                      style={{ 
-                        backgroundColor: darkMode ? '#2a2a2a' : 'white',
-                        color: darkMode ? 'white' : 'inherit',
-                        borderColor: darkMode ? '#444' : '#ced4da'
-                      }}
-                    />
-                  </div>
-                  <div className="col-md-6">
-                    <label htmlFor="subject" className="form-label" style={{ color: darkMode ? 'white' : 'inherit' }}>Subject</label>
-                    <input 
-                      type="text" 
-                      className="form-control" 
-                      id="subject" 
-                      required 
-                      style={{ 
-                        backgroundColor: darkMode ? '#2a2a2a' : 'white',
-                        color: darkMode ? 'white' : 'inherit',
-                        borderColor: darkMode ? '#444' : '#ced4da'
-                      }}
-                    />
-                  </div>
-                  <div className="col-12">
-                    <label htmlFor="message" className="form-label" style={{ color: darkMode ? 'white' : 'inherit' }}>Message</label>
-                    <textarea 
-                      className="form-control" 
-                      id="message" 
-                      rows="5" 
-                      required 
-                      style={{ 
-                        backgroundColor: darkMode ? '#2a2a2a' : 'white',
-                        color: darkMode ? 'white' : 'inherit',
-                        borderColor: darkMode ? '#444' : '#ced4da'
-                      }}
-                    ></textarea>
-                  </div>
-                  <div className="col-12">
-                    <button 
-                      type="submit" 
-                      className="btn px-4 py-2" 
-                      style={{
-                        backgroundColor: '#5FB0A5',
-                        color: 'white',
-                        border: '2px solid #5FB0A5',
-                        transition: 'all 0.3s ease'
-                      }}
-                      onMouseOver={(e) => {
-                        e.target.style.backgroundColor = darkMode ? '#1e1e1e' : 'white';
-                        e.target.style.color = '#5FB0A5';
-                      }}
-                      onMouseOut={(e) => {
-                        e.target.style.backgroundColor = '#5FB0A5';
-                        e.target.style.color = 'white';
-                      }}
-                    >
-                      Send Message
-                    </button>
-                  </div>
-                </div>
-              </form>
+              <form 
+  name="contact" 
+  method="POST" 
+  data-netlify="true"
+  className="needs-validation"
+>
+  {/* Hidden input so Netlify detects the form */}
+  <input type="hidden" name="form-name" value="contact" />
+
+  <div className="row g-3">
+    <div className="col-md-6">
+      <label htmlFor="name" className="form-label" style={{ color: darkMode ? 'white' : 'inherit' }}>Full Name</label>
+      <input 
+        type="text" 
+        className="form-control" 
+        id="name" 
+        name="name"    // 👈 Added name attribute
+        required 
+        style={{ 
+          backgroundColor: darkMode ? '#2a2a2a' : 'white',
+          color: darkMode ? 'white' : 'inherit',
+          borderColor: darkMode ? '#444' : '#ced4da'
+        }}
+      />
+    </div>
+    <div className="col-md-6">
+      <label htmlFor="email" className="form-label" style={{ color: darkMode ? 'white' : 'inherit' }}>Email</label>
+      <input 
+        type="email" 
+        className="form-control" 
+        id="email" 
+        name="email"   // 👈 Added name attribute
+        required 
+        style={{ 
+          backgroundColor: darkMode ? '#2a2a2a' : 'white',
+          color: darkMode ? 'white' : 'inherit',
+          borderColor: darkMode ? '#444' : '#ced4da'
+        }}
+      />
+    </div>
+    <div className="col-md-6">
+      <label htmlFor="phone" className="form-label" style={{ color: darkMode ? 'white' : 'inherit' }}>Phone Number</label>
+      <input 
+        type="tel" 
+        className="form-control" 
+        id="phone" 
+        name="phone"   // 👈 Added name attribute
+        placeholder="+1 (123) 456-7890" 
+        required 
+        style={{ 
+          backgroundColor: darkMode ? '#2a2a2a' : 'white',
+          color: darkMode ? 'white' : 'inherit',
+          borderColor: darkMode ? '#444' : '#ced4da'
+        }}
+      />
+    </div>
+    <div className="col-md-6">
+      <label htmlFor="subject" className="form-label" style={{ color: darkMode ? 'white' : 'inherit' }}>Subject</label>
+      <input 
+        type="text" 
+        className="form-control" 
+        id="subject" 
+        name="subject"   // 👈 Added name attribute
+        required 
+        style={{ 
+          backgroundColor: darkMode ? '#2a2a2a' : 'white',
+          color: darkMode ? 'white' : 'inherit',
+          borderColor: darkMode ? '#444' : '#ced4da'
+        }}
+      />
+    </div>
+    <div className="col-12">
+      <label htmlFor="message" className="form-label" style={{ color: darkMode ? 'white' : 'inherit' }}>Message</label>
+      <textarea 
+        className="form-control" 
+        id="message" 
+        name="message"   // 👈 Added name attribute
+        rows="5" 
+        required 
+        style={{ 
+          backgroundColor: darkMode ? '#2a2a2a' : 'white',
+          color: darkMode ? 'white' : 'inherit',
+          borderColor: darkMode ? '#444' : '#ced4da'
+        }}
+      ></textarea>
+    </div>
+    <div className="col-12">
+      <button 
+        type="submit" 
+        className="btn px-4 py-2" 
+        style={{
+          backgroundColor: '#5FB0A5',
+          color: 'white',
+          border: '2px solid #5FB0A5',
+          transition: 'all 0.3s ease'
+        }}
+        onMouseOver={(e) => {
+          e.target.style.backgroundColor = darkMode ? '#1e1e1e' : 'white';
+          e.target.style.color = '#5FB0A5';
+        }}
+        onMouseOut={(e) => {
+          e.target.style.backgroundColor = '#5FB0A5';
+          e.target.style.color = 'white';
+        }}
+      >
+        Send Message
+      </button>
+    </div>
+  </div>
+</form>
+
             </div>
           </div>
         </div>
