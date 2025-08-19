@@ -21,7 +21,7 @@ const ContactUS = () => {
         </div>
 
         <div className="row g-4">
-          {/* Contact Information */}
+          {/* Contact Information  */}
           <div className="col-lg-5">
             <div className="card h-100 border-0 shadow-sm p-4" style={{ 
               borderRadius: '15px',
