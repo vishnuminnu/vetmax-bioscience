@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { ThemeContext } from '../components/ThemeContext';
+import Chatbot from './Chatbot';
 
 const ContactUS = () => {
   const { darkMode } = useContext(ThemeContext);
@@ -34,7 +35,7 @@ const ContactUS = () => {
                 <FaPhone className="mt-1 me-3" size={20} style={{ color: '#5FB0A5' }} />
                 <div>
                   <h4 className="h6 fw-bold mb-1" style={{ color: darkMode ? 'white' : 'inherit' }}>Phone</h4>
-                  <p className="mb-0" style={{ color: darkMode ? '#b0b0b0' : 'inherit' }}>+1 (800) 555-1234</p>
+                  <p className="mb-0" style={{ color: darkMode ? '#b0b0b0' : 'inherit' }}>7013633917</p>
                   <p style={{ color: darkMode ? '#b0b0b0' : 'inherit' }}>Mon-Fri: 8:00 AM - 5:00 PM</p>
                 </div>
               </div>
@@ -52,8 +53,8 @@ const ContactUS = () => {
                 <FaMapMarkerAlt className="mt-1 me-3" size={20} style={{ color: '#5FB0A5' }} />
                 <div>
                   <h4 className="h6 fw-bold mb-1" style={{ color: darkMode ? 'white' : 'inherit' }}>Headquarters</h4>
-                  <p className="mb-0" style={{ color: darkMode ? '#b0b0b0' : 'inherit' }}>123 Bioscience Park</p>
-                  <p style={{ color: darkMode ? '#b0b0b0' : 'inherit' }}>Research Triangle, NC 27709</p>
+                  <p className="mb-0" style={{ color: darkMode ? '#b0b0b0' : 'inherit' }}>1191 Fox Valley Dr, Aurora, IL 60504</p>
+                  
                 </div>
               </div>
 
@@ -70,7 +71,7 @@ const ContactUS = () => {
                 <h4 className="h6 fw-bold mb-3" style={{ color: darkMode ? 'white' : 'inherit' }}>Follow Us</h4>
                 <div className="d-flex gap-3">
                   <a href="#" style={{ color: darkMode ? 'white' : 'inherit' }}><FaLinkedin size={24} /></a>
-                  <a href="#" style={{ color: darkMode ? 'white' : 'inherit' }}><FaTwitter size={24} /></a>
+                  {/* <a href="#" style={{ color: darkMode ? 'white' : 'inherit' }}><FaTwitter size={24} /></a> */}
                   <a href="#" style={{ color: darkMode ? 'white' : 'inherit' }}><FaInstagram size={24} /></a>
                 </div>
               </div>

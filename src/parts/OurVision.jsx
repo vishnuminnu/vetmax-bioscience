@@ -64,7 +64,7 @@ const OurVision = () => {
                   </div>
                 ))}
               </div>
-
+{/* 
               <button 
                 className="btn btn-lg mt-5 px-4 py-2" 
                 style={{
@@ -83,7 +83,7 @@ const OurVision = () => {
                 }}
               >
                 Join Our Mission <FaArrowRight className="ms-2" />
-              </button>
+              </button> */}
             </div>
           </div>
 

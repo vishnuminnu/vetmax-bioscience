@@ -4,6 +4,13 @@ import azimax from "../assets/3.jpg"
 import azimax2 from "../assets/4.jpg"
 import amox2 from "../assets/6.jpg"
 import amox from "../assets/5.jpg"
+import larvafeed from "../assets/larvafeed.jpeg"
+import larvafeed1 from "../assets/larvafeed1.jpeg"
+import larvaspray from "../assets/larvaspray.jpeg"
+import toxinut from "../assets/toxinut.jpeg"
+import toxinut1 from "../assets/toxinut1.jpeg"
+import flyhit from "../assets/flyhit.jpeg"
+import flyhit1 from "../assets/flyhit1.jpeg"
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import { FaFilePdf } from 'react-icons/fa'
 
@@ -80,9 +87,9 @@ Wing rot & dermatitis`,
         name: "FlyHit Liquid",
         description: "Natural fly attractant and controller for poultry farms",
         fullDescription: "FlyHit Liquid is a natural, herbal fly control solution formulated with neem oil and castor oil. It effectively attracts and controls house flies in poultry farms, breaking their life cycle and minimizing fly-borne issues. Safe for poultry, humans, and the environment.",
-        images: [azimax, azimax2],
+        images: [flyhit, flyhit1],
         pdfUrl: "/pdfs/azimax.pdf",
-        category: "Vaccines",
+        category: "Liquid",
         specifications: {
           "How to use": `Mix 100 ml FlyHit Liquid in 1–2 liters of water
 Place in open, wide containers in fly-infested areas
@@ -103,9 +110,9 @@ Safe for poultry, humans, and the environment`
         name: "LARVA HIT – FEED",
         description: "Biological, non-medicinal feed additive for poultry",
         fullDescription: "LARVA HIT – FEED is a natural, enzyme-based feed supplement designed to biologically dry poultry and cattle excreta. It controls fly breeding, improves gut health, boosts immunity, and enhances overall animal performance. Safe and effective without using pesticides.",
-        images: [azimax, azimax2],
+        images: [larvafeed, larvafeed1],
         pdfUrl: "/pdfs/azimax.pdf",
-        category: "Vaccines",
+        category: "Powder",
         specifications: {
           dosage: `Layer: 100 g / ton of feed
 Breeder: 150 g / ton of feed
@@ -134,7 +141,7 @@ Prevents pathogen colonization`
         name: "LARVA HIT – SPRAY",
         description: "Biological Management of Excreta in Poultry & Dairy Farms",
         fullDescription: "LARVA HIT – SPRAY is a biological, enzyme-based emulsion designed to dry poultry and cattle excreta through in-situ composting. It helps reduce fly breeding, moisture, and harmful gas emissions, promoting a safer and more hygienic farm environment—without using toxic pesticides.",
-        images: [azimax, azimax2],
+        images: [larvaspray],
         pdfUrl: "/pdfs/azimax.pdf",
         category: "Vaccines",
         specifications: {
@@ -162,7 +169,7 @@ Safe, biological, and non-toxic solution`
         name: "TOXINAUT",
         description: " Liquid & Premix",
         fullDescription: "TOXINAUT is an advanced animal feed supplement formulated to neutralize mycotoxins and reduce chemical or pesticide toxicity. With a blend of hydrolysing enzymes, organic metabolites, and liver stimulants, it enhances immunity, improves organ function, and promotes better growth and feed efficiency in poultry and livestock.",
-        images: [azimax, azimax2],
+        images: [toxinut,toxinut1],
         pdfUrl: "/pdfs/azimax.pdf",
         category: "Vaccines",
         specifications: {

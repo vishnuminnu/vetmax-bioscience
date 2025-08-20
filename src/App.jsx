@@ -4,9 +4,9 @@ import { ThemeProvider } from './components/ThemeContext'; // Adjusted path to c
 
 function App() {
   return (
-    <ThemeProvider>
+    <>
       <Layout />
-    </ThemeProvider>
+    </>
   );
 }
 

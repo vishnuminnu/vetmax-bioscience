@@ -56,7 +56,7 @@ const Products = () => {
       description: "Biological, non-medicinal feed additive for poultry", 
       image: larvahit, 
       category: "Tablet",
-      categoryDisplay: "Tablet Form"
+      categoryDisplay: "powder"
     }
   ];
 
@@ -85,7 +85,7 @@ const Products = () => {
   };
 
   return (
-    <section className="py-5" style={{ 
+    <section className="py-5" id="products" style={{ 
       backgroundColor: darkMode ? '#121212' : 'white',
       transition: 'background-color 0.3s ease'
     }}>

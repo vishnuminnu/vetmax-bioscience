@@ -15,14 +15,14 @@ const Footer = () => {
         <div className="row g-4">
           {/* Company Info */}
           <div className="col-lg-4 mb-4">
-            <h3 className="h4 mb-4" style={{ color: '#5FB0A5' }}>VetMaxBio</h3>
+            <h3 className="h4 mb-4" style={{ color: '#5FB0A5' }}>Vetmax Bioscience</h3>
             <p className="small" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>
               Advancing animal health through innovative biotechnology solutions for poultry and livestock.
             </p>
             <div className="mt-4">
               <div className="d-flex align-items-center mb-2">
                 <FaPhone className="me-3" style={{ color: '#5FB0A5' }} />
-                <span style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>+1 (800) 555-1234</span>
+                <span style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>7013633917</span>
               </div>
               <div className="d-flex align-items-center mb-2">
                 <FaEnvelope className="me-3" style={{ color: '#5FB0A5' }} />
@@ -39,10 +39,10 @@ const Footer = () => {
           <div className="col-lg-2 col-md-4 mb-4">
             <h5 className="h6 mb-4" style={{ color: '#5FB0A5' }}>Quick Links</h5>
             <ul className="list-unstyled">
-              <li className="mb-2"><a href="#" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Home</a></li>
-              <li className="mb-2"><a href="#" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>About Us</a></li>
-              <li className="mb-2"><a href="#" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Products</a></li>
-              <li className="mb-2"><a href="#" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Research</a></li>
+              <li className="mb-2"><a href="/" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Home</a></li>
+              <li className="mb-2"><a href="/aboutus" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>About Us</a></li>
+              <li className="mb-2"><a href="/allproducts" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Products</a></li>
+              <li className="mb-2"><a href="/research" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Research</a></li>
               <li className="mb-2"><a href="#" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Contact</a></li>
             </ul>
           </div>
@@ -51,11 +51,11 @@ const Footer = () => {
           <div className="col-lg-2 col-md-4 mb-4">
             <h5 className="h6 mb-4" style={{ color: '#5FB0A5' }}>Products</h5>
             <ul className="list-unstyled">
-              <li className="mb-2"><a href="#" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Vaccines</a></li>
+              {/* <li className="mb-2"><a href="#" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Vaccines</a></li>
               <li className="mb-2"><a href="#" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Diagnostics</a></li>
               <li className="mb-2"><a href="#" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Nutrition</a></li>
-              <li className="mb-2"><a href="#" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Pharmaceuticals</a></li>
-              <li className="mb-2"><a href="#" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Equipment</a></li>
+              <li className="mb-2"><a href="#" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Pharmaceuticals</a></li> */}
+              <li className="mb-2"><a href="/allproducts" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Our Products</a></li>
             </ul>
           </div>
 
@@ -64,7 +64,7 @@ const Footer = () => {
             <h5 className="h6 mb-4" style={{ color: '#5FB0A5' }}>Connect With Us</h5>
             <div className="d-flex gap-3 mb-4">
               <a href="#" className="text-white" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}><FaLinkedin size={20} /></a>
-              <a href="#" className="text-white" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}><FaTwitter size={20} /></a>
+              {/* <a href="#" className="text-white" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}><FaTwitter size={20} /></a> */}
               <a href="#" className="text-white" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}><FaInstagram size={20} /></a>
             </div>
             
@@ -112,7 +112,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-6 text-center text-md-start">
             <p className="small mb-0" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>
-              © {new Date().getFullYear()} VetMaxBio. All rights reserved.
+              © {new Date().getFullYear()} Vetmax Bioscience. All rights reserved.
             </p>
           </div>
           <div className="col-md-6 text-center text-md-end">

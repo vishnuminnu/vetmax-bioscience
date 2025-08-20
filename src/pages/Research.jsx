@@ -2,8 +2,10 @@ import React, { useContext } from 'react';
 import { FaFlask, FaMicroscope, FaChartLine, FaSeedling, FaBookOpen } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import { ThemeContext } from '../components/ThemeContext';
-import researchBanner from '../assets/research.png'; // Import your research banner image
-
+import researchBanner from '../assets/research.png';
+import adm from "../assets/adm1.png" 
+import ecolex from "../assets/ecolex1.png"
+import kashiv from "../assets/kashiv1.png"
 const Research = () => {
   const navigate = useNavigate();
   const { darkMode } = useContext(ThemeContext);
@@ -168,7 +170,8 @@ const Research = () => {
           </div>
 
           {/* Partnerships */}
-         <div className="card border-0 shadow-sm mb-5" style={{ 
+    {/* Partnerships */}
+<div className="card border-0 shadow-sm mb-5" style={{ 
   borderRadius: '15px',
   backgroundColor: darkMode ? '#1e1e1e' : 'white',
   transition: 'background-color 0.3s ease'
@@ -179,22 +182,26 @@ const Research = () => {
       Strategic partnerships driving innovation in poultry health solutions
     </p>
     <div className="d-flex flex-wrap justify-content-center gap-4">
-      {['ADM', 'Rohit Associate', 'Ecolex'].map((partner, index) => (
-        <div key={index} className="p-3 rounded" style={{ 
+      {[
+        { name: 'ADM', logo: adm },
+        { name: 'Rohit Associate', logo: ecolex },
+        { name: 'Ecolex', logo: kashiv }
+      ].map((partner, index) => (
+        <div key={index} className="p-3 rounded d-flex align-items-center justify-content-center" style={{ 
           width: '150px', 
           height: '80px',
           backgroundColor: darkMode ? '#2a2a2a' : '#f8f9fa',
-          transition: 'background-color 0.3s ease',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center'
+          transition: 'background-color 0.3s ease'
         }}>
-          <p className="text-center fw-bold mb-0" style={{ 
-            color: darkMode ? 'white' : 'inherit',
-            fontSize: '0.9rem'
-          }}>
-            {partner}
-          </p>
+          <img 
+            src={partner.logo} 
+            alt={partner.name} 
+            className="img-fluid"
+            style={{ 
+              maxHeight: '110px',
+              filter: darkMode ? 'brightness(0) invert(1)' : 'none'
+            }}
+          />
         </div>
       ))}
     </div>

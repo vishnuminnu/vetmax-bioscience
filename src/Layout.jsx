@@ -9,8 +9,9 @@ import ProductsView from './pages/ProductsView';
 import ScrollToTop from './components/ScrollToTop';
 import ViewDetails from './pages/ViewDetails';
 import AboutUs from './pages/AboutUs';
-import ContactPage from './pages/Contactpage'; // Updated import (singular naming)
+import ContactPage from './pages/Contactpage';
 import Team from "./pages/Team";
+import Chatbot from './parts/Chatbot';
 
 const Layout = () => {
   return (
@@ -21,7 +22,6 @@ const Layout = () => {
         <Routes>
           <Route path="/" element={<Maincontent />} />
           <Route path="/research" element={<Research />} />
-          <Route path="/contact" element={<ContactPage />} /> {/* Updated to use ContactPage */}
           <Route path="/allproducts" element={<ProductsView />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/ourteam" element={<Team />} />
@@ -29,6 +29,8 @@ const Layout = () => {
         </Routes>
       </main>
       <Footer />
+      {/* Move Chatbot outside of main content to ensure it floats properly */}
+      <Chatbot />
     </Router>
   );
 }

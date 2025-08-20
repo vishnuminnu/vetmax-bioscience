@@ -13,6 +13,13 @@ const HeroSection = () => {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  const scrollToProducts = () => {
+    const contactSection = document.getElementById('products');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
 
   return (
     <section 
@@ -55,7 +62,8 @@ const HeroSection = () => {
                   e.target.style.backgroundColor = 'transparent';
                   e.target.style.color = darkMode ? '#ffffff' : '#5FB0A5';
                 }}
-                onClick={() => navigate('/allproducts')}
+                // onClick={() => navigate('/allproducts')}
+                onClick={scrollToProducts}
               >
                 Our Products
               </button>

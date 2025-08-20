@@ -3,8 +3,10 @@ import { FaFlask, FaUsers, FaBullseye, FaHandshake } from 'react-icons/fa';
 import poultryfarm from "../assets/poultryfarm.png"
 import leadership from "../assets/leadership.png"
 import { ThemeContext } from '../components/ThemeContext';
+import { useNavigate } from 'react-router-dom';
 
 const AboutUs = () => {
+   const navigate = useNavigate();
   const { darkMode } = useContext(ThemeContext);
 
   const stats = [
@@ -96,6 +98,8 @@ const AboutUs = () => {
                   e.target.style.backgroundColor = '#5FB0A5';
                   e.target.style.color = 'white';
                 }}
+                onClick={() => navigate('/ourteam')}
+
               >
                 Meet The Team
               </button>
