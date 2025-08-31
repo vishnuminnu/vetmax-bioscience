@@ -6,11 +6,29 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>https://vetmaxbio.in/</loc>
   <lastmod>2025-08-31T06:44:48+00:00</lastmod>
 </url>
 
+<url>
+  <loc>https://vetmaxbio.in/research</loc>
+  <lastmod>2025-08-31T06:44:48+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://vetmaxbio.in/allproducts</loc>
+  <lastmod>2025-08-31T06:44:48+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://vetmaxbio.in/aboutus</loc>
+  <lastmod>2025-08-31T06:44:48+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://vetmaxbio.in/ourteam</loc>
+  <lastmod>2025-08-31T06:44:48+00:00</lastmod>
+</url>
 
 </urlset>
