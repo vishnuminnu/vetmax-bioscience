@@ -5,6 +5,7 @@ import Products from '../parts/Products';
 import OurVision from '../parts/OurVision';
 import ContactUS from '../parts/ContactUS';
 import { useLocation } from 'react-router-dom';
+import { Helmet } from "react-helmet-async";
 
 const Maincontent = () => {
   const location = useLocation();
