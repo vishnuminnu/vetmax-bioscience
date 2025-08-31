@@ -22,7 +22,7 @@ const Maincontent = () => {
   return (
     <>
        <Helmet>
-        <title>My Website - Home</title>
+        <title>Home - Vetmax Bioscience</title>
         <meta name="description" content="Welcome to My Website. Discover our products, features, and vision." />
         <meta name="keywords" content="React, Products, Features, Vision, Contact" />
         <meta property="og:title" content="My Website" />

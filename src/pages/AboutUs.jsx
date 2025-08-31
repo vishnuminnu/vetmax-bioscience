@@ -4,6 +4,7 @@ import poultryfarm from "../assets/poultryfarm.png"
 import leadership from "../assets/leadership.png"
 import { ThemeContext } from '../components/ThemeContext';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from "react-helmet-async";
 
 const AboutUs = () => {
    const navigate = useNavigate();
@@ -44,6 +45,24 @@ const AboutUs = () => {
       backgroundColor: darkMode ? '#121212' : '#F9FAFB',
       transition: 'background-color 0.3s ease'
     }}>
+            <Helmet>
+        <title>About Us - Vetmax Bioscience</title>
+        <meta
+          name="description"
+          content="Learn about Vetmax Bioscience – pioneers in poultry biotechnology with over 12 years of experience, 500+ products, and a strong commitment to animal welfare."
+        />
+        <meta
+          name="keywords"
+          content="Vetmax Bioscience, About Us, Poultry Biotechnology, Animal Health, Innovation, Leadership"
+        />
+        <meta property="og:title" content="About Us - Vetmax Bioscience" />
+        <meta
+          property="og:description"
+          content="Discover Vetmax Bioscience's story, leadership, and core values in advancing poultry health and biotechnology innovation."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={poultryfarm} />
+      </Helmet>
       <div className="container">
         {/* Hero Section */}
         <div className="text-center mb-5">
