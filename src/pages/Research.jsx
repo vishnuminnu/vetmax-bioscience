@@ -6,6 +6,8 @@ import researchBanner from '../assets/research.png';
 import adm from "../assets/adm1.png" 
 import ecolex from "../assets/ecolex1.png"
 import kashiv from "../assets/kashiv1.png"
+import { Helmet } from "react-helmet-async"; // ✅ Import Helmet
+
 const Research = () => {
   const navigate = useNavigate();
   const { darkMode } = useContext(ThemeContext);
@@ -57,6 +59,25 @@ const Research = () => {
 
   return (
     <div style={{ backgroundColor: darkMode ? '#121212' : '#F9FAFB', transition: 'background-color 0.3s ease' }}>
+            {/* ✅ SEO Meta Tags */}
+      <Helmet>
+        <title>Research & Innovation - Vetmax Bioscience</title>
+        <meta 
+          name="description" 
+          content="Explore Vetmax Bioscience's cutting-edge research in poultry health: vaccine development, diagnostics, epidemiology, nutrition, and industry collaborations." 
+        />
+        <meta 
+          name="keywords" 
+          content="Vetmax Bioscience Research, Poultry Health, Vaccine Development, Diagnostics, Epidemiology, Nutrition, Immunity, Publications" 
+        />
+        <meta property="og:title" content="Research & Innovation - Vetmax Bioscience" />
+        <meta 
+          property="og:description" 
+          content="Discover how Vetmax Bioscience advances poultry health through vaccine research, diagnostic technologies, and global partnerships." 
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={researchBanner} />
+      </Helmet>
       {/* Full-width research banner image */}
       <div className="w-100" style={{ height: '400px', overflow: 'hidden' }}>
         <img 

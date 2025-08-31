@@ -48,6 +48,28 @@ const Team = () => {
   ];
 
   return (
+    <>
+    {/* ✅ SEO Meta Tags */}
+      <Helmet>
+        <title>Our Team | Vetmax Biosciences</title>
+        <meta 
+          name="description" 
+          content="Meet the expert team at Vetmax Biosciences, including leaders in poultry vaccine development, diagnostics, and biotechnology innovation." 
+        />
+        <meta 
+          name="keywords" 
+          content="Vetmax Biosciences team, poultry research experts, veterinary scientists, vaccine development, diagnostics, biotechnology" 
+        />
+        <meta property="og:title" content="Meet Our Team | Vetmax Biosciences" />
+        <meta 
+          property="og:description" 
+          content="Discover the brilliant minds driving innovation at Vetmax Biosciences – experts in veterinary microbiology, diagnostics, and poultry health solutions." 
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.vetmaxbio.in/team" />
+        <meta property="og:image" content="https://www.vetmaxbio.in/assets/hero.png" />
+      </Helmet>
+ 
     <section className="py-5" style={{ 
       backgroundColor: darkMode ? '#121212' : '#F9FAFB',
       transition: 'background-color 0.3s ease'
@@ -134,6 +156,7 @@ const Team = () => {
         </div>
       </div>
     </section>
+       </>
   );
 };
 

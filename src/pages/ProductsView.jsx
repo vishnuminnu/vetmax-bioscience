@@ -50,6 +50,28 @@ const ProductsView = () => {
   }, []);
 
   return (
+    <>
+      {/* ✅ SEO Meta Tags */}
+      <Helmet>
+        <title>Poultry Health Products | Vetmax Biosciences</title>
+        <meta 
+          name="description" 
+          content="Explore Vetmax Biosciences’ poultry health solutions: AZIMAX-LB antibiotic, AMOX powder, FlyHit fly control, LarvaHit feed & spray, and TOXINAUT mycotoxin binder." 
+        />
+        <meta 
+          name="keywords" 
+          content="Vetmax products, poultry antibiotics, poultry feed additives, fly control for poultry, mycotoxin binders, AZIMAX-LB, AMOX, FlyHit, LarvaHit, TOXINAUT" 
+        />
+        <meta property="og:title" content="Poultry Health Products | Vetmax Biosciences" />
+        <meta 
+          property="og:description" 
+          content="Discover Vetmax Biosciences’ product range: antibiotics, pest control, feed additives, and mycotoxin binders for healthier poultry." 
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.vetmaxbio.in/products" />
+        <meta property="og:image" content="https://www.vetmaxbio.in/assets/azimax-pa.png" />
+      </Helmet>
+   
     <section className="py-5" style={{ 
       backgroundColor: darkMode ? '#121212' : '#f8f9fa',
       minHeight: '100vh'
@@ -271,6 +293,7 @@ const ProductsView = () => {
         }
       `}</style>
     </section>
+     </>
   );
 };
 
