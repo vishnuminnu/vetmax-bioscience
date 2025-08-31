@@ -44,8 +44,8 @@ const ContactUS = () => {
                 <FaEnvelope className="mt-1 me-3" size={20} style={{ color: '#5FB0A5' }} />
                 <div>
                   <h4 className="h6 fw-bold mb-1" style={{ color: darkMode ? 'white' : 'inherit' }}>Email</h4>
-                  <p className="mb-0" style={{ color: darkMode ? '#b0b0b0' : 'inherit' }}>info@vetmaxbio.com</p>
-                  <p style={{ color: darkMode ? '#b0b0b0' : 'inherit' }}>support@vetmaxbio.com</p>
+                  <p className="mb-0" style={{ color: darkMode ? '#b0b0b0' : 'inherit' }}>info@vetmaxbio.in</p>
+                  {/* <p style={{ color: darkMode ? '#b0b0b0' : 'inherit' }}>support@vetmaxbio.com</p> */}
                 </div>
               </div>
 
@@ -53,7 +53,8 @@ const ContactUS = () => {
                 <FaMapMarkerAlt className="mt-1 me-3" size={20} style={{ color: '#5FB0A5' }} />
                 <div>
                   <h4 className="h6 fw-bold mb-1" style={{ color: darkMode ? 'white' : 'inherit' }}>Headquarters</h4>
-                  <p className="mb-0" style={{ color: darkMode ? '#b0b0b0' : 'inherit' }}>1191 Fox Valley Dr, Aurora, IL 60504</p>
+                  <p className="mb-0" style={{ color: darkMode ? '#b0b0b0' : 'inherit' }}>Plot No. SEP, SLNS Colony, Meerpet, Lenin Nagar, Balapur, Hyderabad,
+Telangana - 500097.</p>
                   
                 </div>
               </div>

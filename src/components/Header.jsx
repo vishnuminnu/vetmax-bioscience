@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from "../assets/FullLogo (2).png";
+import logoLight from "../assets/FullLogo (2).png";
+import logoDark from "../assets/logo3.png"; // You'll need to create this dark version
 import { ThemeContext } from './ThemeContext';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
@@ -12,7 +13,7 @@ const Header = () => {
             boxShadow: '0 2px 10px rgba(0, 0, 0, 0.25)',
             position: 'relative',
             zIndex: 1000,
-            backgroundColor: 'var(--header-bg)'
+            backgroundColor: darkMode ? '#1a1a1a' : '#ffffff'
         }}>
             <nav className={`navbar navbar-expand-lg py-3 ${darkMode ? 'navbar-dark' : 'navbar-light'}`}>
                 <div className="container-fluid">
@@ -29,13 +30,14 @@ const Header = () => {
                             lineHeight: 0
                         }}>
                             <img
-                                src={logo}
-                                alt="logo"
+                                src={darkMode ? logoDark : logoLight}
+                                alt="Vetmax Bioscience logo"
                                 style={{ 
                                     width: '100px',
                                     height: '90px',
                                     objectFit: 'cover',
-                                    transform: 'translateY(5px)'
+                                    transform: 'translateY(5px)',
+                                    transition: 'opacity 0.3s ease'
                                 }}
                             />
                         </NavLink>
@@ -51,8 +53,9 @@ const Header = () => {
                                 background: 'none',
                                 border: 'none',
                                 cursor: 'pointer',
-                                color: 'var(--text-color)',
-                                fontSize: '1.25rem'
+                                color: darkMode ? '#ffffff' : '#000000',
+                                fontSize: '1.25rem',
+                                transition: 'color 0.3s ease'
                             }}
                         >
                             {darkMode ? <FaSun /> : <FaMoon />}
@@ -66,6 +69,9 @@ const Header = () => {
                             aria-controls="navbarSupportedContent"
                             aria-expanded="false" 
                             aria-label="Toggle navigation"
+                            style={{
+                                borderColor: darkMode ? 'rgba(255,255,255,0.5)' : 'rgba(0,0,0,0.5)'
+                            }}
                         >
                             <span className="navbar-toggler-icon"></span>
                         </button>
@@ -79,6 +85,7 @@ const Header = () => {
                                     className={({ isActive }) => 
                                         isActive ? "nav-link active" : "nav-link"
                                     }
+                                    style={{ color: darkMode ? '#ffffff' : '#000000' }}
                                     end
                                 >
                                     Home
@@ -90,6 +97,7 @@ const Header = () => {
                                     className={({ isActive }) => 
                                         isActive ? "nav-link active" : "nav-link"
                                     }
+                                    style={{ color: darkMode ? '#ffffff' : '#000000' }}
                                 >
                                     Research & Innovation
                                 </NavLink>
@@ -100,6 +108,7 @@ const Header = () => {
                                     className={({ isActive }) => 
                                         isActive ? "nav-link active" : "nav-link"
                                     }
+                                    style={{ color: darkMode ? '#ffffff' : '#000000' }}
                                 >
                                     Products & Services
                                 </NavLink>
@@ -110,6 +119,7 @@ const Header = () => {
                                     className={({ isActive }) => 
                                         isActive ? "nav-link active" : "nav-link"
                                     }
+                                    style={{ color: darkMode ? '#ffffff' : '#000000' }}
                                 >
                                     About Us
                                 </NavLink>
@@ -123,25 +133,21 @@ const Header = () => {
                 .nav-link {
                     padding: 0.5rem 1rem;
                     transition: all 0.3s ease;
-                    color: var(--text-color);
                 }
                 .nav-link:not(.active):hover {
-                    background-color: var(--primary-color) !important;
+                    background-color: #5FB0A5 !important;
                     color: white !important;
                     border-radius: 4px;
                 }
                 .nav-link.active {
-                    color: var(--primary-color) !important;
+                    color: #5FB0A5 !important;
                     background-color: transparent !important;
                     font-weight: bold;
                     border-radius: 4px;
                 }
                 .nav-link:active:not(.active) {
-                    background-color: var(--primary-color) !important;
+                    background-color: #5FB0A5 !important;
                     color: white !important;
-                }
-                .navbar {
-                    background-color: var(--header-bg) !important;
                 }
             `}</style>
         </div>

@@ -26,11 +26,12 @@ const Footer = () => {
               </div>
               <div className="d-flex align-items-center mb-2">
                 <FaEnvelope className="me-3" style={{ color: '#5FB0A5' }} />
-                <span style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>info@vetmaxbio.com</span>
+                <span style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>info@vetmaxbio.in</span>
               </div>
               <div className="d-flex align-items-start">
                 <FaMapMarkerAlt className="me-3 mt-1" style={{ color: '#5FB0A5' }} />
-                <span style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>191 Fox Valley Dr, Aurora, IL 60504</span>
+                <p style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Plot No. SEP, SLNS Colony, Meerpet, Lenin Nagar, Balapur, Hyderabad,
+Telangana - 500097.</p>
               </div>
             </div>
           </div>
@@ -43,7 +44,7 @@ const Footer = () => {
               <li className="mb-2"><a href="/aboutus" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>About Us</a></li>
               <li className="mb-2"><a href="/allproducts" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Products</a></li>
               <li className="mb-2"><a href="/research" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Research</a></li>
-              <li className="mb-2"><a href="#" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Contact</a></li>
+              <li className="mb-2"><a href="/#contact" className="text-white text-decoration-none" style={{ color: darkMode ? '#e0e0e0' : 'inherit' }}>Contact</a></li>
             </ul>
           </div>
 
